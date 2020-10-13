@@ -64,9 +64,14 @@ namespace AtletikaiVerseny
                 osszeg = osszeg + lista[i].Ugras;
             }
             atlag = osszeg / lista.Count;
+            Console.WriteLine("--------------------------");
+            Console.WriteLine("5.Feladat: ");
+            Console.WriteLine("Átlag alatt lévő ugrások száma: {0}",lista.Count);
         }
         static void hatodik()
         {
+            Console.WriteLine("---------------------------------------------");
+            Console.WriteLine("6.Feladat: Adatok fájlba írása.");
             StreamWriter sw = new StreamWriter("versenyzok.txt");
             foreach (var i in lista)
             {
